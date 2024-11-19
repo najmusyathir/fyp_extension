@@ -90,9 +90,9 @@ function processLazadaData(data) {
                         img: img
                     };
 
-                    if (checkboxStatus == true) {
-                        itemList.push(itemDetails);
-                    }
+                    itemList.push(itemDetails);
+                    // if (checkboxStatus == true) {
+                    // }
                 }
             }
 

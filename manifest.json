@@ -1,12 +1,12 @@
 {
   "manifest_version": 3,
   "name": "CPU/Motherboard compatibility Check",
-  "version": "1.0.1",
+  "version": "1.2",
   "description": "Available checking for Lazada Cart only, other platform will be updated soon",
   "icons": {
-    "16": "/images/cpu_logo.png",
-    "48": "/images/cpu_logo.png",
-    "128": "/images/cpu_logo.png"
+    "16": "/images/logo.png",
+    "48": "/images/logo.png",
+    "128": "/images/logo.png"
   },
   "action": {
     "default_popup": "popup.html",
