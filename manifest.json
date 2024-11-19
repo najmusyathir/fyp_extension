@@ -1,0 +1,37 @@
+{
+  "manifest_version": 3,
+  "name": "CPU/Motherboard compatibility Check",
+  "version": "1.0.1",
+  "description": "Available checking for Lazada Cart only, other platform will be updated soon",
+  "icons": {
+    "16": "/images/cpu_logo.png",
+    "48": "/images/cpu_logo.png",
+    "128": "/images/cpu_logo.png"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "CPU Checker"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.lazada.com.my/cart*"
+      ],
+       "js": [
+        "lazadaScript.js"
+      ],
+      "run_at": "document_end" 
+    }
+  ],
+  "permissions": [
+    "notifications",
+    "tabs",
+    "storage",
+    "nativeMessaging",
+    "activeTab"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  }
+}
+
